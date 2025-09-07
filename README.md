@@ -4,30 +4,27 @@ using namespace std ;
 //vast va rasand //ejtema eshterak matris ha
 int main () {
 	int n , m ;
-	cout << "satr matris ra vared kon" << "\n" ;
+	cout << "satr matris ra vared kon : " ;
 	cin >> n ;
-	cout << "sotom matris ra vared kon" << "\n" ;
+	cout << "sotoom matris ra vared kon : " ;
 	cin >> m ;
 	
 	int A[n][m] ;
 	cout << "matris rabeteh A ra vared kon(0 or 1)" << "\n" ;
 	for(int i=0 ; i<n ; i++) {
-		cout << "satr" << i+1 << ": \n" ;
+		cout << "satr" << i+1 << ": " ;
 		for(int j=0 ; j<m ; j++) {
 			cin >> A[i][j] ;
 		}
-		cout << "\n" ;
 	}
 	int B[n][m] ;
 	cout << "matris rabeteh B ra vared kon(0 or 1)" << "\n" ;
 	for(int i=0 ; i<n ; i++) {
-		cout << "satr" << i+1 << ": \n" ;
+		cout << "satr" << i+1 << ": " ;
 		for(int j=0 ; j<m ; j++) {
 			cin >> B[i][j] ;
 		}
-		cout << "\n" ;
 	}
-	
 	int result ;
 	string a ;
 	cout << "(Or) or (And) \n" ;
@@ -40,7 +37,7 @@ int main () {
 				cout << "na motabar" ;
 				return 1 ;
 			} 
-			cout << result << "\t" ;
+			cout << result << "  " ;
 		}
 		cout << "\n" ;
 	}
